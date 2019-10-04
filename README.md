@@ -35,6 +35,8 @@ https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfk
 <!-- Markdown snippet -->
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ben-siewert/mui-nextjs-data-demo)
 
+**note**: you'll have to enter the build command and publish directory below in the Netlify dashboard, then trigger a redeploy for this deploy button to work. 
+
 Build Command:
 ```sh
 yarn deploy
