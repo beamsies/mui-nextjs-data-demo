@@ -37,6 +37,7 @@
     "@types/lodash": "^4.14.138",
     "@types/next": "latest",
     "@types/next-redux-wrapper": "^2.0.2",
+    "@types/node": "^12.7.11",
     "@types/nprogress": "^0.2.0",
     "@types/react": "latest",
     "@types/react-dom": "latest",

@@ -29,22 +29,26 @@ if (
 function create() {
   let middleware: any[] = [];
 
-  if (
-    process.env.NODE_ENV !== "production" &&
-    process.browser &&
-    !window.__REDUX_DEVTOOLS_EXTENSION__ &&
-    // redux-logger needs this feature
-    Object["assign"] // eslint-disable-line dot-notation
-  ) {
-    // eslint-disable-next-line global-require
-    const createLogger = require("redux-logger").createLogger;
+  // if (
+  //   process.env.NODE_ENV !== "production" &&
+  //   process.browser &&
+  //   !window.__REDUX_DEVTOOLS_EXTENSION__ &&
+  //   // redux-logger needs this feature
+  //   Object["assign"] // eslint-disable-line dot-notation
+  // ) {
+  //   // eslint-disable-next-line global-require
+  //   const createLogger = require("redux-logger").createLogger;
 
-    middleware = [...middleware, createLogger()];
-  }
+  //   middleware = [...middleware, createLogger()];
+  // }
+
+  const createLogger = require("redux-logger").createLogger;
+
+  middleware = [...middleware, createLogger()];
 
   return createStore(
     combineReducers({
-      charts: chartsReducer,
+      charts: chartsReducer
     }),
     // initialState, // Hydrate the store with server-side data
     compose(
