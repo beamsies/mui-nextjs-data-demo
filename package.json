@@ -9,7 +9,7 @@
     "@nivo/pie": "^0.59.1",
     "clsx": "latest",
     "deepmerge": "^4.0.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "material-table": "^1.50.0",
     "next": "latest",
     "next-redux-wrapper": "^3.0.0",
